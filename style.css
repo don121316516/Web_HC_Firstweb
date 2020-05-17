@@ -1,5 +1,7 @@
 @font-face{
+        /* 字形名稱 */
     font-family: Ngaan;
+        /* 字形來源 src url 路徑 */
     src: url(./font/I.Ngaan.ttf)
 }
 
@@ -18,7 +20,29 @@ nav{
 
 #logo span{
     font-family: Ngaan;
-    font-size: 36px;
-    
+    font-size: 45px;
+    font-weight: 600;
 }
 
+#nav {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(3, 1fr);
+    /* 對齊項目(垂直) */
+    align-items: center;
+    text-align: center;}
+
+    #nav a {
+        /* 文字-裝飾 - 底線、刪除線 */
+        text-decoration: none;
+        color: brown;
+        font-size: 20px;
+        /* 轉場：時間 */
+        transition: 0.3s;
+    }
+
+/* :hover 滑入 */
+#nav a:hover {
+    color: black;
+    font-size: 22px;
+}
